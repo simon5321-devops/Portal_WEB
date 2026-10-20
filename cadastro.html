@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu pedido | LOJA GAMER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+    <header class="site-header">
+        <div class="barra-topo">
+            <input type="checkbox" id="tema" class="visualmente-oculto" role="switch">
+            <label for="tema" class="alternar">
+                <span class="txt-claro">Modo escuro</span>
+                <span class="txt-escuro">Modo claro</span>
+            </label>
+        </div>
+
+        <div class="header-superior">
+            <a class="logo" href="index.html" aria-label="LOJA GAMER - página inicial">LOJA<span>GAMER</span></a>
+
+            <form class="busca" action="#" method="get" role="search">
+                <label for="pesquisa" class="visualmente-oculto">Pesquisar produtos</label>
+                <input type="search" id="pesquisa" name="pesquisa" placeholder="O que você está procurando?">
+                <button type="submit">Pesquisar</button>
+            </form>
+
+            <nav class="atalhos-header" aria-label="Acesso rápido">
+                <a href="cadastro.html">Minha conta</a>
+                <a href="contato.html">Atendimento</a>
+                <a href="cadastro.html#pedido">Carrinho</a>
+            </nav>
+        </div>
+
+        <nav class="menu-principal" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#ofertas">Ofertas</a></li>
+                <li><a href="detalhes.html">Especificações</a></li>
+                <li><a class="ativo" href="cadastro.html" aria-current="page">Monte seu pedido</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menu-categorias" aria-label="Categorias de produtos">
+            <a href="index.html#placa-video">Hardware</a>
+            <a href="index.html#monitor">Monitores</a>
+            <a href="index.html#teclado">Teclados</a>
+            <a href="index.html#mouse">Mouses</a>
+            <a href="index.html#headset">Headsets</a>
+            <a href="index.html#cadeira">Cadeiras</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Finalize seu pedido</h1>
+            <p>Preencha os dados abaixo e receba seu equipamento em casa.</p>
+        </section>
+
+        <ul class="atalhos">
+            <li><a href="#dados">1. Dados pessoais</a></li>
+            <li><a href="#pedido">2. Pedido</a></li>
+            <li><a href="#pagamento">3. Pagamento</a></li>
+        </ul>
+
+        <form class="formulario" action="#" method="post">
+
+            <fieldset id="dados">
+                <legend>Dados pessoais</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex.: João da Silva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Ex.: São Paulo" required>
+                </div>
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Seu pedido</legend>
+
+                <div class="campo">
+                    <label for="produto">Produto</label>
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione um produto</option>
+                        <option value="teclado">Teclado Mecânico RGB</option>
+                        <option value="mouse">Mouse Gamer 16000 DPI</option>
+                        <option value="headset">Headset Surround 7.1</option>
+                        <option value="monitor">Monitor 27" 165Hz</option>
+                        <option value="cadeira">Cadeira Gamer Pro</option>
+                        <option value="placa">Placa de Vídeo 12GB</option>
+                    </select>
+                </div>
+
+                <p class="grupo-titulo">Tipo de entrega</p>
+                <div class="opcoes-radio">
+                    <div class="opcao">
+                        <input type="radio" id="entrega-normal" name="entrega" value="normal" required>
+                        <label for="entrega-normal">Normal (5 a 8 dias)</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="entrega-expressa" name="entrega" value="expressa">
+                        <label for="entrega-expressa">Expressa (1 a 3 dias)</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="entrega-retirada" name="entrega" value="retirada">
+                        <label for="entrega-retirada">Retirar na loja</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="pagamento">
+                <legend>Forma de pagamento</legend>
+
+                <div class="opcoes-radio">
+                    <div class="opcao">
+                        <input type="radio" id="pg-pix" name="pagamento" value="pix" required>
+                        <label for="pg-pix">Pix</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="pg-cartao" name="pagamento" value="cartao">
+                        <label for="pg-cartao">Cartão de crédito</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="pg-boleto" name="pagamento" value="boleto">
+                        <label for="pg-boleto">Boleto</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="obs">Observações (opcional)</label>
+                    <textarea id="obs" name="obs" rows="4" placeholder="Alguma informação extra sobre o pedido?"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-enviar">Finalizar pedido</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h2>LOJA GAMER</h2>
+            <p>Sua loja de produtos para setup gamer.</p>
+        </section>
+
+        <nav aria-label="Links do rodapé">
+            <h2>Institucional</h2>
+            <a href="#topo">Voltar ao topo</a>
+            <a href="index.html#produtos">Ver produtos</a>
+            <a href="detalhes.html#faq">Dúvidas frequentes</a>
+        </nav>
+
+        <section>
+            <h2>Atendimento</h2>
+            <p>Segunda a sexta, das 8h às 18h.</p>
+            <a href="mailto:contato@lojagamer.com.br">contato@lojagamer.com.br</a>
+        </section>
+    </footer>
+
+</body>
+</html>

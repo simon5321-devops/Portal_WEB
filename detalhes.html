@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações | LOJA GAMER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+    <header class="site-header">
+        <div class="barra-topo">
+            <input type="checkbox" id="tema" class="visualmente-oculto" role="switch">
+            <label for="tema" class="alternar">
+                <span class="txt-claro">Modo escuro</span>
+                <span class="txt-escuro">Modo claro</span>
+            </label>
+        </div>
+
+        <div class="header-superior">
+            <a class="logo" href="index.html" aria-label="LOJA GAMER - página inicial">LOJA<span>GAMER</span></a>
+
+            <form class="busca" action="#" method="get" role="search">
+                <label for="pesquisa" class="visualmente-oculto">Pesquisar produtos</label>
+                <input type="search" id="pesquisa" name="pesquisa" placeholder="O que você está procurando?">
+                <button type="submit">Pesquisar</button>
+            </form>
+
+            <nav class="atalhos-header" aria-label="Acesso rápido">
+                <a href="cadastro.html">Minha conta</a>
+                <a href="contato.html">Atendimento</a>
+                <a href="cadastro.html#pedido">Carrinho</a>
+            </nav>
+        </div>
+
+        <nav class="menu-principal" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#ofertas">Ofertas</a></li>
+                <li><a class="ativo" href="detalhes.html" aria-current="page">Especificações</a></li>
+                <li><a href="cadastro.html">Monte seu pedido</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menu-categorias" aria-label="Categorias de produtos">
+            <a href="index.html#placa-video">Hardware</a>
+            <a href="index.html#monitor">Monitores</a>
+            <a href="index.html#teclado">Teclados</a>
+            <a href="index.html#mouse">Mouses</a>
+            <a href="index.html#headset">Headsets</a>
+            <a href="index.html#cadeira">Cadeiras</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Detalhes e especificações</h1>
+            <p>Conheça a loja, compare produtos e tire suas dúvidas.</p>
+        </section>
+
+        <ul class="atalhos">
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#tabela">Tabela comparativa</a></li>
+            <li><a href="#estoque">Estoque</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+        </ul>
+
+        <div class="midias">
+            <section id="video">
+                <h2>Vídeo institucional</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/BQco-ETHtTs?si=wQwxp-zdsumYUg7R" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="localizacao">
+                <h2>Nossa loja física</h2>
+                <div class="video-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13718.4926658229!2d-35.22587628902573!3d-5.868650405095809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255f78b2e267b%3A0xd07b0fcde810f5d7!2sMiranda%20Computa%C3%A7%C3%A3o%20-%20Centro%20Administrativo%20(Natal-RN)!5e0!3m2!1spt-BR!2sbr!4v1792538662025!5m2!1spt-BR!2sbr" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+
+        <section id="tabela">
+            <h2>Comparativo de periféricos</h2>
+            <div class="tabela-wrapper">
+                <table>
+                    <caption>Especificações técnicas dos produtos mais vendidos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Conexão</th>
+                            <th scope="col">Garantia</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Teclado Mecânico RGB</td><td>Periférico</td><td>USB-C</td><td>12 meses</td><td>R$ 349,90</td></tr>
+                        <tr><td>Mouse Gamer 16000 DPI</td><td>Periférico</td><td>USB / Wireless</td><td>12 meses</td><td>R$ 199,90</td></tr>
+                        <tr><td>Headset Surround 7.1</td><td>Áudio</td><td>USB</td><td>12 meses</td><td>R$ 429,90</td></tr>
+                        <tr><td>Monitor 27" 165Hz</td><td>Vídeo</td><td>HDMI / DisplayPort</td><td>24 meses</td><td>R$ 1.599,90</td></tr>
+                        <tr><td>Placa de Vídeo 12GB</td><td>Hardware</td><td>PCIe 4.0</td><td>36 meses</td><td>R$ 3.999,90</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="estoque">
+            <h2>Nível de estoque</h2>
+            <div class="indicador">
+                <span class="indicador-nome">Teclados</span>
+                <progress value="80" max="100">80%</progress>
+                <span class="indicador-valor">80%</span>
+            </div>
+            <div class="indicador">
+                <span class="indicador-nome">Mouses</span>
+                <progress value="55" max="100">55%</progress>
+                <span class="indicador-valor">55%</span>
+            </div>
+            <div class="indicador">
+                <span class="indicador-nome">Headsets</span>
+                <progress value="30" max="100">30%</progress>
+                <span class="indicador-valor">30%</span>
+            </div>
+            <div class="indicador">
+                <span class="indicador-nome">Monitores</span>
+                <progress value="15" max="100">15%</progress>
+                <span class="indicador-valor">15%</span>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Perguntas frequentes</h2>
+            <dl class="faq">
+                <dt>Vocês enviam para todo o Brasil?</dt>
+                <dd>Sim, enviamos para todos os estados com rastreio completo do pedido.</dd>
+
+                <dt>Qual o prazo de troca?</dt>
+                <dd>Você tem até 7 dias após o recebimento para solicitar a troca ou devolução.</dd>
+
+                <dt>Quais formas de pagamento são aceitas?</dt>
+                <dd>Pix, cartão de crédito em até 12x e boleto bancário.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h2>LOJA GAMER</h2>
+            <p>Sua loja de produtos para setup gamer.</p>
+        </section>
+
+        <nav aria-label="Links do rodapé">
+            <h2>Institucional</h2>
+            <a href="#topo">Voltar ao topo</a>
+            <a href="index.html#produtos">Ver produtos</a>
+            <a href="contato.html">Fale conosco</a>
+        </nav>
+
+        <section>
+            <h2>Atendimento</h2>
+            <p>Segunda a sexta, das 8h às 18h.</p>
+            <a href="mailto:contato@lojagamer.com.br">contato@lojagamer.com.br</a>
+        </section>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LOJA GAMER - loja online de produtos e periféricos gamer">
+    <title>LOJA GAMER | Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+    <header class="site-header">
+        <div class="barra-topo">
+            <input type="checkbox" id="tema" class="visualmente-oculto" role="switch">
+            <label for="tema" class="alternar">
+                <span class="txt-claro">Modo escuro</span>
+                <span class="txt-escuro">Modo claro</span>
+            </label>
+        </div>
+
+        <div class="header-superior">
+            <a class="logo" href="index.html" aria-label="LOJA GAMER - página inicial">LOJA<span>GAMER</span></a>
+
+            <form class="busca" action="#" method="get" role="search">
+                <label for="pesquisa" class="visualmente-oculto">Pesquisar produtos</label>
+                <input type="search" id="pesquisa" name="pesquisa" placeholder="O que você está procurando?">
+                <button type="submit">Pesquisar</button>
+            </form>
+
+            <nav class="atalhos-header" aria-label="Acesso rápido">
+                <a href="cadastro.html">Minha conta</a>
+                <a href="contato.html">Atendimento</a>
+                <a href="cadastro.html#pedido">Carrinho</a>
+            </nav>
+        </div>
+
+        <nav class="menu-principal" aria-label="Menu principal">
+            <ul>
+                <li><a class="ativo" href="index.html" aria-current="page">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="detalhes.html">Especificações</a></li>
+                <li><a href="cadastro.html">Monte seu pedido</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menu-categorias" aria-label="Categorias de produtos">
+            <a href="#placa-video">Hardware</a>
+            <a href="#monitor">Monitores</a>
+            <a href="#teclado">Teclados</a>
+            <a href="#mouse">Mouses</a>
+            <a href="#headset">Headsets</a>
+            <a href="#cadeira">Cadeiras</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faixa-promocional" id="ofertas" aria-labelledby="titulo-oferta">
+            <div>
+                <p class="chamada">OFERTA DA SEMANA</p>
+                <h1 id="titulo-oferta">Equipamentos para elevar seu setup</h1>
+                <p>Pagamento em até 12 vezes sem juros ou 15% de desconto no Pix.</p>
+            </div>
+            <a class="botao botao-claro" href="#produtos">Conferir produtos</a>
+        </section>
+
+        <section class="beneficios" aria-label="Vantagens da LOJA GAMER">
+            <article>
+                <strong>Compra segura</strong>
+                <p>Ambiente protegido para sua compra.</p>
+            </article>
+            <article>
+                <strong>Garantia oficial</strong>
+                <p>Produtos com garantia do fabricante.</p>
+            </article>
+            <article>
+                <strong>Suporte especializado</strong>
+                <p>Atendimento para ajudar na sua escolha.</p>
+            </article>
+            <article>
+                <strong>Envio nacional</strong>
+                <p>Entregas para todo o Brasil.</p>
+            </article>
+        </section>
+
+        <nav class="atalhos-pagina" aria-label="Atalhos desta página">
+            <a href="#produtos">Todos os produtos</a>
+            <a href="#placa-video">Hardware</a>
+            <a href="detalhes.html#tabela">Tabela comparativa</a>
+            <a href="cadastro.html#pedido">Fazer pedido</a>
+        </nav>
+
+        <section id="produtos" aria-labelledby="titulo-produtos">
+            <header class="titulo-secao">
+                <div>
+                    <p class="rotulo-secao">SELEÇÃO LOJA GAMER</p>
+                    <h2 id="titulo-produtos">Produtos em destaque</h2>
+                </div>
+                <a href="detalhes.html">Ver especificações</a>
+            </header>
+
+            <div class="grade-produtos">
+
+                <article class="produto-card" id="teclado">
+                    <p class="etiqueta">Oferta</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/keyboard.jpeg" width="360" height="240" alt="Teclado mecânico gamer com iluminação RGB">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Periféricos</p>
+                        <h3><a href="cadastro.html#pedido">Teclado Mecânico RGB</a></h3>
+                        <p class="descricao-produto">Switches red, padrão ABNT2 e iluminação ajustável.</p>
+                        <p class="preco-anterior">De R$ 399,90</p>
+                        <p class="preco-atual">R$ 349,90</p>
+                        <p class="preco-pix">R$ 297,42 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="produto-card" id="mouse">
+                    <p class="etiqueta">Mais vendido</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/mouse.webp" width="360" height="240" alt="Mouse gamer com sensor óptico de 16000 DPI">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Periféricos</p>
+                        <h3><a href="cadastro.html#pedido">Mouse Gamer 16000 DPI</a></h3>
+                        <p class="descricao-produto">Sensor preciso, sete botões e design ergonômico.</p>
+                        <p class="preco-anterior">De R$ 229,90</p>
+                        <p class="preco-atual">R$ 199,90</p>
+                        <p class="preco-pix">R$ 169,92 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="produto-card" id="headset">
+                    <p class="etiqueta">Oferta</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/headset.webp" width="360" height="240" alt="Headset gamer com som surround 7.1">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Áudio</p>
+                        <h3><a href="cadastro.html#pedido">Headset Surround 7.1</a></h3>
+                        <p class="descricao-produto">Som imersivo e microfone com redução de ruído.</p>
+                        <p class="preco-anterior">De R$ 499,90</p>
+                        <p class="preco-atual">R$ 429,90</p>
+                        <p class="preco-pix">R$ 365,42 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="produto-card" id="monitor">
+                    <p class="etiqueta">Oferta</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/monitor.webp" width="360" height="240" alt="Monitor gamer de 27 polegadas com taxa de atualização de 165Hz">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Monitores</p>
+                        <h3><a href="cadastro.html#pedido">Monitor Gamer 27" 165Hz</a></h3>
+                        <p class="descricao-produto">Painel IPS, tempo de resposta de 1ms e adaptive sync.</p>
+                        <p class="preco-anterior">De R$ 1.799,90</p>
+                        <p class="preco-atual">R$ 1.599,90</p>
+                        <p class="preco-pix">R$ 1.359,92 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="produto-card" id="cadeira">
+                    <p class="etiqueta">Oferta</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/cadeira_gamer.webp" width="360" height="240" alt="Cadeira gamer reclinável com apoio lombar">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Móveis gamer</p>
+                        <h3><a href="cadastro.html#pedido">Cadeira Gamer Pro</a></h3>
+                        <p class="descricao-produto">Reclinável, com apoio lombar e suporte para até 150 kg.</p>
+                        <p class="preco-anterior">De R$ 1.399,90</p>
+                        <p class="preco-atual">R$ 1.199,90</p>
+                        <p class="preco-pix">R$ 1.019,92 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="produto-card" id="placa-video">
+                    <p class="etiqueta">Destaque</p>
+                    <a href="cadastro.html#pedido">
+                        <img src="img/placa.webp" width="360" height="240" alt="Placa de vídeo gamer com 12 GB de memória">
+                    </a>
+                    <div class="produto-info">
+                        <p class="categoria-produto">Hardware</p>
+                        <h3><a href="cadastro.html#pedido">Placa de Vídeo 12 GB</a></h3>
+                        <p class="descricao-produto">Desempenho para jogos em alta resolução e ray tracing.</p>
+                        <p class="preco-anterior">De R$ 4.499,90</p>
+                        <p class="preco-atual">R$ 3.999,90</p>
+                        <p class="preco-pix">R$ 3.399,92 no Pix</p>
+                        <a class="botao botao-produto" href="cadastro.html#pedido">Comprar</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="chamada-cadastro" aria-labelledby="titulo-ajuda">
+            <div>
+                <p class="rotulo-secao">PRECISA DE AJUDA?</p>
+                <h2 id="titulo-ajuda">Monte seu pedido com a LOJA GAMER</h2>
+                <p>Escolha o produto, a forma de entrega e o pagamento.</p>
+            </div>
+            <a class="botao" href="cadastro.html#pedido">Continuar</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h2>LOJA GAMER</h2>
+            <p>Sua loja de produtos para setup gamer.</p>
+        </section>
+
+        <nav aria-label="Links do rodapé">
+            <h2>Institucional</h2>
+            <a href="detalhes.html">Sobre a loja</a>
+            <a href="contato.html">Contato</a>
+            <a href="detalhes.html#faq">Perguntas frequentes</a>
+        </nav>
+
+        <section>
+            <h2>Atendimento</h2>
+            <p>Segunda a sexta, das 8h às 18h.</p>
+            <a href="mailto:contato@lojagamer.com.br">contato@lojagamer.com.br</a>
+        </section>
+    </footer>
+
+</body>
+</html>
